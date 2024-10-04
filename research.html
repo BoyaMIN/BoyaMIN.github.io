@@ -29,23 +29,6 @@
     <style>
       .research-section {
         margin-bottom: 2em;
-        padding: 1em;
-        background-color: #f9f9f9;
-        border-radius: 5px;
-      }
-      .research-section h2 {
-        color: #2a7ae2;
-        border-bottom: 1px solid #e8e8e8;
-        padding-bottom: 0.5em;
-      }
-      .research-section h3 {
-        color: #333;
-      }
-      .research-section ul {
-        padding-left: 1.5em;
-      }
-      .research-section li {
-        margin-bottom: 0.5em;
       }
       .research-image {
         max-width: 100%;
@@ -53,7 +36,6 @@
         margin: 1em 0;
         border: 1px solid #ddd;
         border-radius: 4px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
       }
       .image-caption {
         text-align: center;
@@ -61,20 +43,47 @@
         margin-top: 0.5em;
         color: #666;
       }
-      @media screen and (max-width: 768px) {
-        .research-section {
-          padding: 0.5em;
-        }
-      }
     </style>
   </head>
 
   <body>
-    <!-- Header and navigation remain unchanged -->
+    <div class="masthead">
+      <div class="masthead__inner-wrap">
+        <div class="masthead__menu">
+          <nav id="site-nav" class="greedy-nav">
+            <button><div class="navicon"></div></button>
+            <ul class="visible-links">
+              <li class="masthead__menu-item masthead__menu-item--lg"><a href="./index.html">MIN Boya's Homepage</a></li>
+              <li class="masthead__menu-item"><a href="./publication.html">Publications</a></li>
+              <li class="masthead__menu-item"><a href="./research.html">Research</a></li>
+              <li class="masthead__menu-item"><a href="./awards.html">Awards</a></li>
+              <li class="masthead__menu-item"><a href="./experience.html">Experience</a></li>
+              <li class="masthead__menu-item"><a href="./skill.html">Skills</a></li>
+            </ul>
+            <ul class="hidden-links hidden"></ul>
+          </nav>
+        </div>
+      </div>
+    </div>
 
     <div id="main" role="main">
       <div class="sidebar sticky">
-        <!-- Sidebar content remains unchanged -->
+        <div itemscope itemtype="http://schema.org/Person">
+          <div class="author__avatar">
+            <img src="./min_photo.jpeg" class="author__avatar" alt="MIN Boya">
+          </div>
+          <div class="author__content">
+            <h3 class="author__name">MIN Boya</h3>
+            <p class="author__bio">Senior Battery Management System Engineer <br> BYD Auto, Institute of Advanced Technology</p>
+          </div>
+          <div class="author__urls-wrapper">
+            <button class="btn btn--inverse">Follow</button>
+            <ul class="author__urls social-icons">
+              <li><a href="mailto:minboya@stu.xjtu.edu.cn"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
+              <li><a href="tel:+86 13186121617"><i class="fas fa-fw fa-phone" aria-hidden="true"></i> Phone</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       <div class="archive">
